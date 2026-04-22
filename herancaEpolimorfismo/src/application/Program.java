@@ -10,15 +10,18 @@ import entities.outsourceEmployee;
 public class Program {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number of emproyees");
+		
 		int n = sc.nextInt();
+		
 		List<Employee> list = new ArrayList<>();
 		
+		System.out.println("Enter the number of emproyees");
 		for (int i=1; i<=n; i++)
 			System.out.println("Employrr #" + i +" data:");
 		
 		
 		System.out.print("Outsourced(y/n)?");
+		
 		char ch =sc.next().charAt(0);
 		System.out.print("Name:");
 		sc.nextLine();
@@ -26,7 +29,7 @@ public class Program {
 		
 		String name =sc.nextLine();
 		System.out.print("Hours: ");
-		double hours = sc.nextDouble();
+		Integer hours = sc.nextInt();
 		
 		
 		System.out.print("value per hour: ");

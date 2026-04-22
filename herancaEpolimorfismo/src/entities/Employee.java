@@ -38,8 +38,9 @@ public Double getValuePerHour() {
 public void setValuePerHour(Double valuePerHour) {
 	this.valuePerHour = valuePerHour;
 }
-		 public Double payment() {
-			 return hours * valuePerHour;
-		 }
+
+public Double payment() {
+    return hours * valuePerHour;
+}
 		 
 }
